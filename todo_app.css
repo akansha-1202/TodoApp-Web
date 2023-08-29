@@ -36,7 +36,7 @@ body{
     font-size: 22px;
 }
 .list{
-    width: 380px;
+    width: 340px;
     height: 300px;
     border: 1px solid #EDEDED;
     border-radius: 10px;
@@ -76,7 +76,7 @@ hr{
 .list2{
     position:absolute;
     top:170px;
-    left:485px;
+    left:460px;
 }
 .list3{
     position:absolute;
@@ -91,7 +91,7 @@ hr{
 .list5{
     position:absolute;
     top:500px;
-    left:485px;
+    left: 460px;
 }
 .blur{
     background-color: #000000;
