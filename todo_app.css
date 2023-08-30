@@ -24,8 +24,8 @@ body {
   align-items: center;
 }
 .img1 {
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
 }
 .box1 {
   color: black;
@@ -54,11 +54,7 @@ body {
 hr {
   border-top: #ededed;
 }
-.list1 {
-  position: absolute;
-  top: 170px;
-  left: 70px;
-}
+
 .x {
   text-decoration: none;
 }
@@ -77,7 +73,10 @@ hr {
   font-size: 18px;
   margin: 30px 0px 0px 30px;
 }
-
+.middle{
+  display: flex;
+  justify-content: center;
+}
 .blur{
     background-color: #000000;
     opacity:0.1;
@@ -92,7 +91,7 @@ hr {
     border-radius: 10px;
     box-shadow: 2px 2px 5px gray;
     background-color: #FFFFFF;
-    margin:16% 25%;
+    margin-top:15% ;
     position: absolute;
     z-index: 3;
     /* opacity: 0.7; */
@@ -141,6 +140,8 @@ hr {
     justify-content: center;
     align-items: center;
     gap: 220px;
+    padding-bottom: 30px;
+    padding-top: 20px;
 }
 .item{
     display: flex;
@@ -157,8 +158,8 @@ hr {
     font-size: 20px;
 }
 .img3{
-    height:50px;
-    width:50px;
+    height:35px;
+    width:35px;
 }
 .box3{
     color:black;
