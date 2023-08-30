@@ -1,103 +1,89 @@
-body{
-    margin:0px;
-    height:1000px;
-    background-color: #F7F7F7;
+body {
+  margin: 0px;
+  min-height: 100vh;
+  background-color: #f7f7f7;
 }
-.background{
-    position:relative;
+.background {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.head{
-    height:44px;
-    width:auto;
-    border:1px solid #7B7B7B29;
-    background-color: #FFFFFF;
-    box-shadow: 0px 3px 30px #7B7B7B29;
-    padding:10px 70px;
-    margin-top:0px;
+.head {
+  height: 44px;
+  width: auto;
+  border: 1px solid #7b7b7b29;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 30px #7b7b7b29;
+  padding: 10px 70px;
+  margin-top: 0px;
 }
-.box{
-    position:relative;
-    }
-.img1{
-    height:50px;
-    width:50px;
-    position: absolute;
-    right:190px;
-    top:5px;
-    margin-right:14px;
+.box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.box1{
-    color:black;
-    text-decoration: none;
-    position: absolute;
-    right:70px;
-    top:15px;
-    font-size: 22px;
+.img1 {
+  height: 50px;
+  width: 50px;
 }
-.list{
-    width: 340px;
-    height: 300px;
-    border: 1px solid #EDEDED;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    cursor: pointer;
-    
+.box1 {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
 }
-.list:hover{
-    box-shadow: 0px 0px 30px #67676729;
+.parent {
+  box-sizing: border-box;
+  display: flex;
+  gap: 6%;
+  flex-wrap: wrap;
+  padding-left: 4%;
 }
-hr{
-    border-top:#EDEDED;
+.list {
+  width: 340px;
+  height: 300px;
+  border: 1px solid #ededed;
+  border-radius: 10px;
+  background-color: #ffffff;
+  cursor: pointer;
+  margin-top: 2%;
 }
-.list1{
-    position:absolute;
-    top:170px;
-    left:70px;
+.list:hover {
+  box-shadow: 0px 0px 30px #67676729;
 }
-.x{
-    text-decoration: none;
+hr {
+  border-top: #ededed;
 }
-.a{
-    color:#00A5EC;
-    font-size: 20px;
-    margin:30px 0px 0px 30px;
+.list1 {
+  position: absolute;
+  top: 170px;
+  left: 70px;
 }
-#b{
-    text-decoration: line-through #C2C2C2;
-    font-size:18px;
-    color:#C2C2C2;
-    margin:30px 0px 0px 30px;
+.x {
+  text-decoration: none;
 }
-#c{
-    font-size:18px;
-    margin:30px 0px 0px 30px;
+.a {
+  color: #00a5ec;
+  font-size: 20px;
+  margin: 30px 0px 0px 30px;
 }
-.list2{
-    position:absolute;
-    top:170px;
-    left:460px;
+#b {
+  text-decoration: line-through #c2c2c2;
+  font-size: 18px;
+  color: #c2c2c2;
+  margin: 30px 0px 0px 30px;
 }
-.list3{
-    position:absolute;
-    top:170px;
-    right:70px;
+#c {
+  font-size: 18px;
+  margin: 30px 0px 0px 30px;
 }
-.list4{
-    position:absolute;
-    top:500px;
-    left:70px;
-}
-.list5{
-    position:absolute;
-    top:500px;
-    left: 460px;
-}
+
 .blur{
     background-color: #000000;
-    opacity:0.2;
- 
+    opacity:0.1;
     cursor:none;
+    z-index: 1;
+    position: absolute;
 }
 .mid-box{
     width: 500px;
@@ -106,8 +92,10 @@ hr{
     border-radius: 10px;
     box-shadow: 2px 2px 5px gray;
     background-color: #FFFFFF;
-    margin:110px auto;
-    position:relative;
+    margin:16% 25%;
+    position: absolute;
+    z-index: 3;
+    /* opacity: 0.7; */
 }
 #text
 {
@@ -146,40 +134,41 @@ hr{
 .btn:hover{
     cursor: pointer;
 }
+
+.nav-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 220px;
+}
+.item{
+    display: flex;
+    align-items: center;
+}
 .img2{
     height:35px;
     width:35px;
-    position: absolute;
-    left:433px;
-    top:48px;
-    margin-right:14px;
+   
 }
 .box2{
     color:black;
     text-decoration: none;
-    position: absolute;
-    left:484px;
-    top:52px;
     font-size: 20px;
 }
 .img3{
     height:50px;
     width:50px;
-    position: absolute;
-    top: 40px;
-    right: 560px;
-    margin-right:14px;
 }
 .box3{
     color:black;
     text-decoration: none;
-    position: absolute;
-    top: 48px;
-    right: 410px;
     width: 150px;
     height: 26px;
     font-size: 22px;
 }
+
+
 .box4{
     width: 500px;
     height: 338px;
@@ -188,7 +177,5 @@ hr{
     background-color: #FFFFFF;
     box-shadow: 0px 0px 20px #67676729;
     cursor: pointer;
-    position:absolute;
-    top: 231px;
-    left: 433px;
+    margin: auto;
 }
